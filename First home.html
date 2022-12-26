@@ -1,0 +1,122 @@
+ <html>
+    <head>
+        <title>
+            The Academy
+        </title>
+        <style>
+
+            body {
+                background-color: #333;
+                color:whitesmoke;
+            }
+            h1   {
+                text-align: center;
+                padding: 30px;
+            }
+            p{color: rgb(141, 141, 141); margin-left: 15px;}
+
+            ul {                                        /* the links starts from the point */
+                list-style-type: none;
+                margin:0;
+                padding:0;
+                overflow: hidden;
+                background-color: #1111;
+            }
+            li{ float: left; } 
+
+            li a, .dropbtn {                          /* the properties and values applicable for both of links and dropdowns */ 
+                display: inline-block;
+                color:whitesmoke;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover, drop:hover .dropbtn { background-color: #111; }
+
+            li.drop { display: inline-block;}
+
+            .drop-content {
+                display: none;
+                position: absolute;
+                background-color: rgba(0, 0, 255, 0.032);
+                min-width: 113.5px;
+                box-shadow: 0px 8px 8px rgba(0,0,0,0.2);
+                z-index:1;
+            }
+            .drop-content a {
+                color:whitesmoke;
+                padding: 5px 8px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .drop-content a:hover { background-color: #333;}
+
+            .drop:hover .drop-content {
+                                     display: block;
+                                      }
+
+            .container {
+                position: relative;
+                max-width:auto;
+                margin:auto;
+                border-radius: 5px;
+            }
+            .container img {vertical-align: middle;}
+
+            .container .menu {
+                position:absolute;
+                top: 0;
+                background: rgb(0, 0, 0);
+                background: rgba(0, 0, 0, 0.5);
+                width: 100%;
+            }
+        </style>
+    </head>
+        <body>
+             <div class="container">
+        <img src="./marc-kleen-eRwmBvhfvG8-unsplash.jpg" alt="marc-kleen-eRwmBvhfvG8-unsplash" style="width:100%";>
+             <div class="menu"> 
+                <h1>WELCOME TO THE ACADEMY!</h1>
+                <P>HOME</P>
+                <ul>
+                <li class="drop">
+                    <a href="javascript:void(0)" class="dropbtn">Departments</a>
+                <div class="drop-content">
+                    <a href="#">CSE</a>
+                    <a href="#">EEE</a>
+                    <a href="#">MECH</a>
+                </div>
+                </li>
+                <li class="drop">
+                    <a href="javascript:void(0)" class="dropbtn">Attendance</a>
+                <div class="drop-content">
+                    <a href="#">CSE</a>
+                    <a href="#">EEE</a>
+                    <a href="#">MECH</a>
+                </div>
+                </li>
+                <li class="drop"><a href="javascript:void(0)" class="dropbtn">Fee Details</a>
+                <div class="drop-content">
+                    <a href="#">1st year</a>
+                    <a href="#">2nd year</a>
+                    <a href="#">3rd year</a>
+                    <a href="#">Final year</a>
+                </div> </li>
+                <li class="drop"><a href="javascript:void(0)" class="dropbtn">Courses</a>
+                <div class="drop-content">
+                    <a href="#">JAVA</a>
+                    <a href="#">ORACLE</a>
+                    <a href="#">CSS</a>
+                    <a href="#">PYTHON</a>
+                    <a href="#">SQL</a>
+                </div> </li>
+                <li class="drop"><a href="javascript:void(0)" class="dropbtn">Exam Details</a>
+                <div class="drop-content">
+                    <a href="#">no details</a>
+                </div></li>
+                </ul>
+             </div>
+            </div>
+        </body>
+ </html>
